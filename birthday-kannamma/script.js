@@ -2,8 +2,6 @@ const $ = (selector) => document.querySelector(selector);
 const welcome = $('#welcome');
 const music = $('#bgMusic');
 const musicToggle = $('#musicToggle');
-const mainVideo = $('#birthdayVideo');
-const backgroundVideo = document.querySelector('.video-bg');
 
 // Create the 20-photo gallery. Replace files in /images while keeping these names.
 const gallery = $('#gallery');
@@ -65,10 +63,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Keep the ambient video background in sync with the main muted video.
-mainVideo.addEventListener('play', () => { backgroundVideo.currentTime = mainVideo.currentTime; backgroundVideo.play().catch(() => {}); });
-mainVideo.addEventListener('pause', () => backgroundVideo.pause());
-mainVideo.addEventListener('seeked', () => { backgroundVideo.currentTime = mainVideo.currentTime; });
 
 // Photo lightbox.
 function openLightbox(src) { $('#lightboxImg').src = src; $('#lightbox').classList.add('open'); }
