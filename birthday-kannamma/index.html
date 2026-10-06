@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160b24">
+  <title>Happy Birthday Kannamma ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div id="particles" aria-hidden="true"></div>
+
+  <div class="welcome" id="welcome">
+    <div class="welcome-glow"></div>
+    <div class="welcome-content">
+      <p class="eyebrow">A little world made only for you</p>
+      <h1>For my <span>Kannamma</span></h1>
+      <p class="welcome-copy">A collection of moments, smiles, and all the love words can hold.</p>
+      <button class="primary-btn" id="enterBtn">Enter your surprise <span>♡</span></button>
+      <small>Best experienced with sound</small>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="audio/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle background music" title="Music">
+    <span class="music-bars"><i></i><i></i><i></i></span>
+  </button>
+
+  <main id="mainContent">
+    <section class="hero section" id="home">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">16 • 10 • 2004</p>
+        <h1>Happy Birthday,<br><span>Kannamma</span></h1>
+        <p class="hero-copy">To the girl who is not just part of my life, but the beautiful reason my whole world feels complete.</p>
+        <a href="#memories" class="ghost-btn">Walk through our memories ↓</a>
+      </div>
+      <div class="hero-side reveal delay-1">
+        <div class="age-ring">
+          <div><strong>22</strong><span>beautiful years</span></div>
+        </div>
+      </div>
+      <div class="scroll-cue"><span></span></div>
+    </section>
+
+    <section class="countdown-wrap section-mini">
+      <div class="countdown-card reveal">
+        <p>Counting every heartbeat until your day</p>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories" id="memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Our little museum of happiness</p>
+        <h2>Twenty moments.<br><em>One beautiful world.</em></h2>
+      </div>
+      <div class="gallery" id="gallery"></div>
+      <p class="gallery-note reveal">Replace images/photo1.jpg through photo20.jpg with your own photos.</p>
+    </section>
+
+    <section class="section letter-section">
+      <div class="letter-shell reveal">
+        <div class="letter-mark">♡</div>
+        <p class="eyebrow">A letter from my heart</p>
+        <h2>My dearest Kannamma,</h2>
+        <div class="letter-copy">
+          <p>Today is not simply your birthday. It is the day this world received the beautiful soul who would one day become my entire world.</p>
+          <p>You are my happiness when days feel heavy, my peace when everything gets loud, and my strength whenever I feel weak. Your smile turns ordinary moments into memories I want to keep forever.</p>
+          <p>You are not just someone I love. You are my home, my safest place, my favorite person, and the most beautiful part of every dream I have for tomorrow.</p>
+          <p>On your special day, I hope life gives you all the happiness you have given me. May your dreams find their way to you, may that beautiful smile never fade, and may you always remember how deeply you are loved.</p>
+        </div>
+        <div class="signature">Forever yours, with all my heart <span>❤️</span></div>
+      </div>
+    </section>
+
+    <section class="section video-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Press play on a beautiful memory</p>
+        <h2>One moment I could<br><em>watch forever.</em></h2>
+      </div>
+      <div class="cinema reveal">
+        <video class="video-bg" muted loop playsinline aria-hidden="true"><source src="video/kannamma.mp4" type="video/mp4"></video>
+        <div class="cinema-shade"></div>
+        <video class="video-main" id="birthdayVideo" muted loop playsinline controls poster="images/photo1.jpg"><source src="video/kannamma.mp4" type="video/mp4"></video>
+        <div class="cinema-label"><span></span> Our favorite scene</div>
+      </div>
+      <p class="video-note reveal">The vertical video stays perfectly proportioned inside a cinematic horizontal frame. It is muted by default.</p>
+    </section>
+
+    <section class="section reasons">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A few of a million reasons</p>
+        <h2>Everything I adore<br><em>about you.</em></h2>
+      </div>
+      <div class="reason-grid">
+        <article class="reason-card reveal"><span>01</span><h3>Your smile</h3><p>The kind of light that can turn my hardest day around.</p></article>
+        <article class="reason-card reveal delay-1"><span>02</span><h3>Your heart</h3><p>Kind, caring, and more beautiful than words could explain.</p></article>
+        <article class="reason-card reveal"><span>03</span><h3>Your presence</h3><p>Because anywhere you are somehow feels like home.</p></article>
+        <article class="reason-card reveal delay-1"><span>04</span><h3>Every little thing</h3><p>Your voice, your laughter, your dreams. Simply, all of you.</p></article>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="final-card reveal">
+        <p class="eyebrow">There is one more thing</p>
+        <h2>My world began feeling<br>complete because of <em>you.</em></h2>
+        <button class="primary-btn" id="surpriseBtn">Open my heart <span>♡</span></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button id="closeLightbox" aria-label="Close">×</button><img id="lightboxImg" alt="A memory with Kannamma">
+  </div>
+
+  <div class="surprise-modal" id="surpriseModal" role="dialog" aria-modal="true">
+    <div class="surprise-inner">
+      <button id="closeSurprise" aria-label="Close">×</button>
+      <div class="cake">🎂</div>
+      <p class="eyebrow">My forever wish</p>
+      <h2>You are my everything,<br><span>Kannamma ❤️</span></h2>
+      <p>Happy 22nd birthday to the most precious person in my world. Today, tomorrow, and every day after, I choose you.</p>
+    </div>
+  </div>
+
+  <footer><p>Made with <span>♥</span> for Kannamma • 16.10.2026</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
